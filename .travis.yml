@@ -9,13 +9,13 @@ python:
 
 # Command to install dependencies, e.g. pip install -r requirements.txt --use-mirrors
 install: pip install -U tox-travis
-         pip3 install -U virtualenv
-         virtualenv --system-site-packages -p python3 ./venv
-         source ./venv/bin/activate
-         pip install --upgrade pip
-         pip install --upgrade tensorflow
-         pip install coverage
-         pip install pytest
+install: pip3 install -U virtualenv
+install: virtualenv --system-site-packages -p python3 ./venv
+install: source ./venv/bin/activate
+install: pip install --upgrade pip
+install: pip install --upgrade tensorflow
+install: pip install coverage
+install: pip install pytest
 
 
 # Command to run tests, e.g. python setup.py test
