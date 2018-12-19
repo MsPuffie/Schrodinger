@@ -14,7 +14,6 @@ install: source ./venv/bin/activate
 install: pip install --upgrade pip
 install: pip install --upgrade tensorflow
 install: pip install coverage
-install: pip install pytest
 
 
 # Command to run tests, e.g. python setup.py test
