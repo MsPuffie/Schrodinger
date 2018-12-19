@@ -30,7 +30,6 @@ script:
 
 - coverage run --source=Schrodinger setup.py test
 
-- coverage report -m
 
 
 
