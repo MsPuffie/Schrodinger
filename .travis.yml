@@ -6,30 +6,62 @@ python:
   - 3.5
   - 3.4
 
+before_install:
+
+- pip install coverage
+
+- pip install tensorflow
+
+
+
 # Command to install dependencies, e.g. pip install -r requirements.txt --use-mirrors
-install: pip install -U tox-travis
-install: pip3 install -U virtualenv
-install: virtualenv --system-site-packages -p python3 ./venv
-install: source ./venv/bin/activate
-install: pip install --upgrade pip
-install: pip install --upgrade tensorflow
-install: pip install coverage
+
+install: 
+
+- pip install coveralls
+
+- python setup.py install
+
 
 
 # Command to run tests, e.g. python setup.py test
-script: coverage run setup.py test
+
+script: 
+
+- coverage run --source=Schrodinger setup.py test
+
+- coverage report -m
+
+
+
+after_success: coveralls
+
+
 
 # Assuming you have installed the travis-ci CLI tool, after you
+
 # create the Github repo and add it to Travis, run the
+
 # following command to finish PyPI deployment setup:
+
 # $ travis encrypt --add deploy.password
+
 deploy:
+
   provider: pypi
+
   distributions: sdist bdist_wheel
-  user: MsPuffie
+
+  user: oddguan
+
   password:
+
     secure: PLEASE_REPLACE_ME
+
   on:
+
     tags: true
-    repo: MsPuffie/schrodinger
+
+    repo: oddguan/schrodinger_equation_solver
+
     python: 3.6
