@@ -24,21 +24,25 @@ where V0 is the potential energy, c is a constant, and ∇2 is the Laplacian.
 Installation
 --------
 
+- pip install coverage
+
 - pip install tensorflow
+
 following this link if you have questions downloading tensorflow:
 https://www.tensorflow.org/install/pip?lang=python3
-- pip install coverage
+
 
 
 Usage
 --------
 Make sure you aready download tensorflow under python3, then use the following commands to run this project
 
-git clone https://github.com/MsPuffie/Schrodinger
-cd schrodinger
-python3 schrodinger/schrodinger.py
+``git clone https://github.com/MsPuffie/Schrodinger``
+``cd schrodinger``
+``python3 schrodinger/schrodinger.py``
 
-
+Licience
+--------
 * Free software: MIT license
 * Documentation: https://schrodinger.readthedocs.io.
 
