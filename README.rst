@@ -31,6 +31,11 @@ Installation
 following this link if you have questions downloading tensorflow:
 https://www.tensorflow.org/install/pip?lang=python3
 
+User Interface
+--------
+- Users can modify the input ``v0``, ``domain`` in v0.txt under both ./schrodinger and./schrodinger/schrodinger directory(remember to edit both)
+
+- Users can modify the input ``N``--number of basis sets in N.txt under both ./schrodinger and./schrodinger/schrodinger directory(remember to edit both)
 
 
 Usage
