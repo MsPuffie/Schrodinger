@@ -2,7 +2,9 @@
 Schrodinger
 ===========
 
-
+.. image:: https://travis-ci.org/MsPuffie/Schrodinger.svg?branch=master
+    :target: https://travis-ci.org/MsPuffie/Schrodinger
+    
 .. image:: https://img.shields.io/pypi/v/schrodinger.svg
         :target: https://pypi.python.org/pypi/schrodinger
 
@@ -20,15 +22,24 @@ Schrodinger
 
 
 
-Solve the 1-step Schrodinger equation numeriacally, using tensorflow
+This Project Solves the 1-step Schrodinger equation numeriacally, using tensorflow.
+    ˆ HΨ(x) = EΨ(x)
+The deﬁnition of ˆ HΨ(x) is
+    −c∇2Ψ(x) + V0(x) 
+where V0 is the potential energy, c is a constant, and ∇2 is the Laplacian.
+
 
 
 * Free software: MIT license
 * Documentation: https://schrodinger.readthedocs.io.
 
 
-Features
+Installation
 --------
+
+- pip install tensorflow
+- pip install coverage
+
 
 * TODO
 
