@@ -51,7 +51,7 @@ deploy:
 
   distributions: sdist bdist_wheel
 
-  user: oddguan
+  user: MsPuffie
 
   password:
 
@@ -61,6 +61,6 @@ deploy:
 
     tags: true
 
-    repo: oddguan/schrodinger_equation_solver
+    repo: MsPuffie/Schrodinger
 
     python: 3.6
